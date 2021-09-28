@@ -25,7 +25,7 @@
       </form>
       </ul>
 
-       <a class="position-relative" href="/cart/{item}" style="margin-right: 1rem; margin-top: 8px">
+       <a class="position-relative" href="{{Session::has('user')? '/cart': '/login'}}" style="margin-right: 1rem; margin-top: 8px">
           <i class="fas fa-shopping-cart text-dark fs-4"></i>
           <small><span class="position-absolute top-0 start-100 rounded-pill translate-middle badge bg-warning" style="border: 2px solid white;">
             <span class="bg-waring" style="color: white; padding: 0;">
@@ -50,7 +50,7 @@
           <a class="nav-link" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link" href="/register">Register</a>
         </li>
         @endif
   
